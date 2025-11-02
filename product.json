@@ -1,0 +1,104 @@
+{
+  "products": [
+    {
+      "id": "p101",
+      "name": "Organic Herbal Tea",
+      "explanation": "Made with 100% natural herbs, free from synthetic additives.",
+      "status": "Excellent",
+      "score": 12,
+      "suggestions": ["Highlight organic certification", "Add sourcing transparency"],
+      "flags": ["Eco-friendly packaging"],
+      "createdAt": "2025-10-29T08:45:00.000Z"
+    },
+    {
+      "id": "p102",
+      "name": "Natural Face Wash",
+      "explanation": "Mild cleanser formulated for sensitive skin.",
+      "status": "Good",
+      "score": 8,
+      "suggestions": ["Add ingredient source info"],
+      "flags": ["Contains essential oils"],
+      "createdAt": "2025-10-28T09:15:00.000Z"
+    },
+    {
+      "id": "p103",
+      "name": "Protein Energy Bar",
+      "explanation": "High-protein snack made with natural ingredients.",
+      "status": "Moderate",
+      "score": 58,
+      "suggestions": ["Reduce sugar content", "Clarify ingredient sourcing"],
+      "flags": ["Contains added sugar"],
+      "createdAt": "2025-10-27T07:20:00.000Z"
+    },
+    {
+      "id": "p104",
+      "name": "Vegan Shampoo",
+      "explanation": "Cruelty-free shampoo with plant-based ingredients.",
+      "status": "Excellent",
+      "score": 88,
+      "suggestions": ["Add recyclable bottle info"],
+      "flags": ["None"],
+      "createdAt": "2025-10-30T11:30:00.000Z"
+    },
+    {
+      "id": "p105",
+      "name": "Organic Hand Cream",
+      "explanation": "Moisturizing cream made from organic oils.",
+      "status": "Good",
+      "score": 74,
+      "suggestions": ["Provide more ingredient details"],
+      "flags": ["Contains fragrance"],
+      "createdAt": "2025-10-25T13:10:00.000Z"
+    },
+    {
+      "id": "p106",
+      "name": "Energy Drink Plus",
+      "explanation": "Carbonated energy drink with natural caffeine.",
+      "status": "Low",
+      "score": 90,
+      "suggestions": ["Reduce artificial flavors", "Add sugar source info"],
+      "flags": ["Artificial flavoring"],
+      "createdAt": "2025-10-26T10:00:00.000Z"
+    },
+    {
+      "id": "p107",
+      "name": "Herbal Toothpaste",
+      "explanation": "Fluoride-free herbal formula for strong teeth.",
+      "status": "Good",
+      "score": 82,
+      "suggestions": ["Add sustainability score"],
+      "flags": ["Contains menthol"],
+      "createdAt": "2025-10-31T09:00:00.000Z"
+    },
+    {
+      "id": "p108",
+      "name": "Protein Smoothie Mix",
+      "explanation": "Plant-based protein powder with vitamins and minerals.",
+      "status": "Moderate",
+      "score": 96,
+      "suggestions": ["Disclose full ingredient list", "Add allergen info"],
+      "flags": ["Contains soy"],
+      "createdAt": "2025-10-24T08:00:00.000Z"
+    },
+    {
+      "id": "p109",
+      "name": "Coconut Body Lotion",
+      "explanation": "Hydrating body lotion made with pure coconut oil.",
+      "status": "Good",
+      "score": 76,
+      "suggestions": ["Show sustainability score"],
+      "flags": ["None"],
+      "createdAt": "2025-10-30T18:30:00.000Z"
+    },
+    {
+      "id": "p110",
+      "name": "Organic Coffee Beans",
+      "explanation": "Ethically sourced and fair-trade certified coffee.",
+      "status": "Excellent",
+      "score": 95,
+      "suggestions": ["Add carbon footprint info"],
+      "flags": ["None"],
+      "createdAt": "2025-11-01T07:00:00.000Z"
+    }
+  ]
+}

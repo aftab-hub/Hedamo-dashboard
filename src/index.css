@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+
+
+
+.sidebar {
+    @apply dark:bg-gray-800 dark:text-gray-200 dark:border-gray-700
+}
+.recharts-default-tooltip {
+  background-color: transparent !important;  /* Tooltip background */
+  border: none !important;           /* Removes border */
+  color: red !important;           /* Text color */
+  padding: 10px !important;          /* Internal spacing */
+  border-radius: 8px !important;     /* Smooth corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; /* Shadow */
+  transition: all 0.3s ease-in-out;
+ 
+}
+
+.recharts-surface{
+    @apply outline-none
+    
+} 
