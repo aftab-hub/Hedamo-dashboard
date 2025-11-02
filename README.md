@@ -20,4 +20,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ![App Screenshot](./public/Dashboard.png)
 
+![App Screenshot](https://hedamo-dashboard-eight.vercel.app/Dashboard.png)
+
 
