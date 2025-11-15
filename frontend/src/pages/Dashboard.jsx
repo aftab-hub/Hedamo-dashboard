@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
 import { Context } from "../Context/Context";
+
 import {
   AreaChart,
   Area,
@@ -13,13 +14,13 @@ import {
 
 const Dashboard = () => {
   const [products, setProducts] = useState([]);
-  const { searchTerm } = useContext(Context);
+  const { searchTerm, backendUrl } = useContext(Context);
 
   // ✅ Fetch recent products dynamically from json-server
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch("http://localhost:3001/products");
+        const res = await fetch(`${backendUrl}/products`);
         const data = await res.json();
 
         // Sort by createdAt if available, else reverse (to get latest)
@@ -29,7 +30,7 @@ const Dashboard = () => {
             : 0
         );
 
-        // Take only recent 6 products for display
+       
         setProducts(sorted);
       } catch (error) {
         console.error("Failed to fetch products:", error);
@@ -215,4 +216,4 @@ const chartData = (() => {
   );
 };
 
-export default Dashboard;
+export default Dashboard;  

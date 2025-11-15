@@ -6,12 +6,16 @@ export const Context = createContext();
 export const ContextProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState("");
     const [products, setProducts] = useState(productsData);
-
+    
+  // const backendUrl = import.meta.env.VITE_API_URL;
+  // console.log(backendUrl);
+  const backendUrl = "http://localhost:5000/api";
+  
 
      useEffect(() => {
       const fetchProducts = async ()=>{
         try {
-        const res =  await fetch("http://localhost:3001/products")
+        const res =  await fetch(`${backendUrl}/products`)
         const data = await res.json()
           
         } catch (error) {
@@ -22,7 +26,7 @@ export const ContextProvider = ({ children }) => {
   }, []);
 
   return (
-    <Context.Provider value={{ searchTerm, setSearchTerm, products, setProducts }}>
+    <Context.Provider value={{ searchTerm, setSearchTerm, products, setProducts, backendUrl }}>
       {children}
     </Context.Provider>
   );

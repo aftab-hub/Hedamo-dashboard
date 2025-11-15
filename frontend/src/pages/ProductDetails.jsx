@@ -1,16 +1,18 @@
 import { useParams, useNavigate } from "react-router-dom";
 import RadialChart from "../components/RadialChart";
 import FlagBadge from "../components/FlagBadge";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { Context } from "../Context/Context";
 
 const ProductDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
 const [product, setProduct] = useState(null);
+const {backendUrl} = useContext(Context)
 
 useEffect(() => {
-  fetch(`http://localhost:3001/products`)
+  fetch(`${backendUrl}/products`)
     .then(res => res.json())
     .then(data => {
       const found = data.find(

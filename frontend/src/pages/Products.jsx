@@ -5,11 +5,11 @@ import ProductTable from "../components/ProuductTable";
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
-  const { searchTerm } = useContext(Context);
+  const { searchTerm, backendUrl } = useContext(Context);
 
   // ✅ Load data from JSON server
   useEffect(() => {
-    fetch("http://localhost:3001/products")
+    fetch(`${backendUrl}/products`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
@@ -21,7 +21,7 @@ const Products = () => {
   // ✅ Delete product (from server + state)
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://localhost:3001/products/${id}`, {
+      await fetch(`${backendUrl}/products/${id}`, {
         method: "DELETE",
       });
       const updatedProducts = products.filter((p) => p.id !== id);
@@ -35,7 +35,7 @@ const Products = () => {
   // ✅ Edit product (PATCH for partial update)
   const handleEdit = async (id, updatedData) => {
     try {
-      const res = await fetch(`http://localhost:3001/products/${id}`, {
+      const res = await fetch(`${backendUrl}/products/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedData),

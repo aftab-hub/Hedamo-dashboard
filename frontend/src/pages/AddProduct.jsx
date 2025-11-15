@@ -1,11 +1,11 @@
-import React, { useState, useContext } from "react";
+import { useContext, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Context } from "../Context/Context";
 import { useNavigate } from "react-router-dom";
+import { Context } from "../Context/Context";
 
 const AddProduct = () => {
   const [step, setStep] = useState(1);
-  // const { setProducts } = useContext(Context);
+  const { backendUrl } = useContext(Context);
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
 
@@ -52,7 +52,7 @@ const AddProduct = () => {
 
 
     try {
-      const response = await fetch("http://localhost:3001/products", {
+      const response = await fetch(`${backendUrl}/create`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newProduct),
