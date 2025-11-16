@@ -11,6 +11,7 @@ This project is built with MongoDB, Express, React, and Node.js, following clean
 🛒 Product Management
 
 Add new products
+
 Edit product details
 Delete products
 View all products
