@@ -1,7 +1,7 @@
 🚀 Hedamo Dashboard — MERN Stack Ecommerce Admin Panel
 
 Hedamo Dashboard is a full-stack MERN application that provides a powerful and easy-to-use admin dashboard for managing an ecommerce store.
-It includes user management, product CRUD, authentication, protected routes, order handling, and a responsive UI.
+It includes product CRUD and a responsive UI.
 
 This project is built with MongoDB, Express, React, and Node.js, following clean folder structure and scalable patterns.
 
@@ -20,7 +20,6 @@ View all products
 
 Real-time updates on dashboard
 
-File/image upload support (optional)
 
 
 🌐 Frontend (React + Vite)
@@ -84,14 +83,10 @@ cd hedamo-dashboard
 
 Frontend
 
-cd client
-
 npm install
 
 
 Backend
-
-cd server
 
 npm install
 
