@@ -9,7 +9,7 @@ export const ContextProvider = ({ children }) => {
     
   // const backendUrl = import.meta.env.VITE_API_URL;
   // console.log(backendUrl);
-  const backendUrl = https://hedamo-backend.onrender.com";
+  const backendUrl = "https://hedamo-backend.onrender.com";
   
 
      useEffect(() => {
